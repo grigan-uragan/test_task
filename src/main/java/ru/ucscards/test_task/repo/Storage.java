@@ -14,10 +14,6 @@ public class Storage implements Repo {
         this.template = template;
     }
 
-    private String getQuery(String query) {
-        return query;
-    }
-
     @Override
     public Data getDataById(int id) {
         List<Data> list = template.query(
